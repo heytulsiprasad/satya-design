@@ -3,11 +3,13 @@ import styled from 'styled-components'
 
 // Components
 import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
 
 const Home = () => {
   return (
     <Container>
       <Navbar />
+      <Hero />
     </Container>
   )
 }

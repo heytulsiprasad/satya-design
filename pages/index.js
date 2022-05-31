@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Marquee from 'react-fast-marquee'
 
 // Components
 import Navbar from '../components/Navbar'
@@ -10,9 +11,21 @@ const Home = () => {
     <Container>
       <Navbar />
       <Hero />
+      <Marquee pauseOnHover style={{ marginRight: '-100px' }}>
+        <FunkyText dark>Featured Projects</FunkyText>
+        <FunkyText>Featured Projects</FunkyText>
+        <FunkyText dark>Featured Projects</FunkyText>
+        <FunkyText>Featured Projects</FunkyText>
+      </Marquee>
     </Container>
   )
 }
+
+const FunkyText = styled.h2`
+  color: ${(props) => (props.dark ? '#BBB' : '#E9E9E9')};
+  font-size: 4rem;
+  margin-right: 3rem;
+`
 
 const Container = styled.div`
   display: flex;

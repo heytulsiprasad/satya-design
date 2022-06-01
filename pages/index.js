@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Marquee from 'react-fast-marquee'
+import Image from 'next/image'
 
 // Components
 import Navbar from '../components/Navbar'
@@ -10,6 +11,14 @@ import Project from '../components/Project'
 // Images
 import iPadCover from '../assets/ipad-mockup.png'
 import iPhoneCover from '../assets/iphone-mockup.png'
+import figma from '../assets/figma.svg'
+import adobeXd from '../assets/adobe-xd.svg'
+import illustrator from '../assets/illustrator.svg'
+import invision from '../assets/invision.svg'
+import miro from '../assets/miro.svg'
+import photoshop from '../assets/photoshop.svg'
+import slack from '../assets/slack.svg'
+import teams from '../assets/teams.svg'
 
 const projects = [
   {
@@ -58,11 +67,47 @@ const Home = () => {
           ))}
       </ProjectSection>
       <ToolSection>
-        <h1>Tools I Love to Use</h1>
-        <ul>
-          <li>Figma</li>
-          <li>Adobe</li>
-          <li>Photoshop</li>
+        <h1 className="heading">Tools I Love to Use</h1>
+        <ul className="tools">
+          <li>
+            <Image src={adobeXd} width={51} height={50} alt="Adobe XD Logo" />
+          </li>
+          <li>
+            <Image
+              src={illustrator}
+              width={50}
+              height={50}
+              alt="Adobe Illustrator Logo"
+            />
+          </li>
+          <li>
+            <Image
+              src={photoshop}
+              width={50}
+              height={50}
+              alt="Adobe Photoshop Logo"
+            />
+          </li>
+          <li>
+            <Image src={figma} width={33} height={50} alt="Figma Logo" />
+          </li>
+          <li>
+            <Image
+              src={teams}
+              width={51}
+              height={50}
+              alt="Microsoft Teams Logo"
+            />
+          </li>
+          <li>
+            <Image src={invision} width={50} height={50} alt="Invision Logo" />
+          </li>
+          <li>
+            <Image src={slack} width={50} height={50} alt="Slack Logo" />
+          </li>
+          <li>
+            <Image src={miro} width={50} height={50} alt="Miro Logo" />
+          </li>
         </ul>
       </ToolSection>
     </Container>
@@ -78,11 +123,11 @@ const FunkyText = styled.h2`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 5.5rem 10rem;
 `
 
 const ProjectSection = styled.section`
   margin: 9.5rem 0;
+  padding: 5.5rem 10rem;
 
   /* Select only last element */
   > * + * {
@@ -90,6 +135,35 @@ const ProjectSection = styled.section`
   }
 `
 
-const ToolSection = styled.section``
+const ToolSection = styled.section`
+  margin-bottom: 10rem;
+  background: #fff8e0;
+  padding: 25rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .heading {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #101223;
+    margin-bottom: 5.8rem;
+  }
+
+  .tools {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > * + * {
+      margin-left: 4rem;
+    }
+  }
+`
 
 export default Home

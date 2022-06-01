@@ -4,7 +4,8 @@ export const NavbarContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5.5rem 10rem;
+  padding: 5.5rem 10rem 0;
+  flex-basis: 20%;
 `
 
 export const NavHero = styled.div`

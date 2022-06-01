@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import logo from '../../assets/logo.svg'
 import theme from '../../assets/theme.svg'
+import hamburger from '../../assets/hamburger.svg'
 import { NavbarContainer, NavList, NavHero } from './styles'
 
 const Navbar = () => {
@@ -29,10 +30,7 @@ const Navbar = () => {
             <p>Get Resume</p>
           </li>
           <li>
-            <p>Projects</p>
-          </li>
-          <li>
-            <p>About Me</p>
+            <Image src={hamburger} alt="Hamburger Menu" />
           </li>
         </ul>
       </NavList>

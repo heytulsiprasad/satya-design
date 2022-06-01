@@ -1,15 +1,12 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.header`
-  padding: 26.4rem 41.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media only screen and (min-width: 950px) {
-    padding: 26.4rem 30rem;
-  }
+  flex-basis: 80%;
+  min-height: 90vh;
 
   .title {
     font-weight: 700;

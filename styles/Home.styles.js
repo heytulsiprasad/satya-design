@@ -163,3 +163,10 @@ export const FooterSection = styled.footer`
     }
   }
 `
+
+export const LandingContainer = styled.section`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`

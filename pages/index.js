@@ -16,6 +16,7 @@ import {
   ToolSection,
   ProfileSection,
   FooterSection,
+  LandingContainer,
 } from '../styles/Home.styles'
 
 // Images
@@ -58,8 +59,10 @@ const projects = [
 const Home = () => {
   return (
     <Container>
-      <Navbar />
-      <Hero />
+      <LandingContainer>
+        <Navbar />
+        <Hero />
+      </LandingContainer>
       <Marquee pauseOnHover style={{ marginRight: '-100px' }} speed={200}>
         <FunkyText dark>Featured Projects</FunkyText>
         <FunkyText>Featured Projects</FunkyText>

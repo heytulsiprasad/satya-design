@@ -37,7 +37,7 @@ const Home = () => {
     <Container>
       <Navbar />
       <Hero />
-      <Marquee pauseOnHover style={{ marginRight: '-100px' }}>
+      <Marquee pauseOnHover style={{ marginRight: '-100px' }} speed={200}>
         <FunkyText dark>Featured Projects</FunkyText>
         <FunkyText>Featured Projects</FunkyText>
         <FunkyText dark>Featured Projects</FunkyText>
@@ -57,6 +57,14 @@ const Home = () => {
             />
           ))}
       </ProjectSection>
+      <ToolSection>
+        <h1>Tools I Love to Use</h1>
+        <ul>
+          <li>Figma</li>
+          <li>Adobe</li>
+          <li>Photoshop</li>
+        </ul>
+      </ToolSection>
     </Container>
   )
 }
@@ -75,6 +83,13 @@ const Container = styled.div`
 
 const ProjectSection = styled.section`
   margin: 9.5rem 0;
+
+  /* Select only last element */
+  > * + * {
+    margin-top: 7.2rem;
+  }
 `
+
+const ToolSection = styled.section``
 
 export default Home

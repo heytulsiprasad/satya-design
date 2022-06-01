@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ProjectContainer = styled.div`
-  margin-bottom: 7.2rem;
   background: ${(props) => (props.background ? props.background : '#edffeb')};
   box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.05);
   border-radius: 8px;

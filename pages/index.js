@@ -8,6 +8,16 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Project from '../components/Project'
 
+// Styles
+import {
+  FunkyText,
+  Container,
+  ProjectSection,
+  ToolSection,
+  ProfileSection,
+  FooterSection,
+} from '../styles/Home.styles'
+
 // Images
 import iPadCover from '../assets/ipad-mockup.png'
 import iPhoneCover from '../assets/iphone-mockup.png'
@@ -19,6 +29,9 @@ import miro from '../assets/miro.svg'
 import photoshop from '../assets/photoshop.svg'
 import slack from '../assets/slack.svg'
 import teams from '../assets/teams.svg'
+import behance from '../assets/behance.svg'
+import linkedin from '../assets/linkedin.svg'
+import mail from '../assets/mail.svg'
 import profile from '../assets/man-looking-to-sky.png'
 
 const projects = [
@@ -123,99 +136,38 @@ const Home = () => {
           </h4>
         </div>
       </ProfileSection>
+      <FooterSection>
+        <div className="about">
+          <h1>Interfaces, Experience &#38; Interaction and friends</h1>
+          <h4 className="about__subhead">
+            I started my journey in computer Science engineering learning Web
+            development, but found solace in design.
+          </h4>
+          <h4>Let’s chat over a cup of coffee at Bhubaneswar, India</h4>
+        </div>
+        <div className="footer">
+          <div className="footer__designation">
+            <h4>Satyaprakash Ray</h4>
+            <h6>Product Designer</h6>
+          </div>
+          <ul className="footer__socials">
+            <li>
+              <Image src={behance} alt="Behance Logo" />
+            </li>
+            <li>
+              <Image src={linkedin} alt="LinkedIn Logo" />
+            </li>
+            <li>
+              <Image src={mail} alt="Mail Icon" />
+            </li>
+          </ul>
+          <div className="footer__time">
+            <p>{new Date().getFullYear()}</p>
+          </div>
+        </div>
+      </FooterSection>
     </Container>
   )
 }
-
-const FunkyText = styled.h2`
-  color: ${(props) => (props.dark ? '#BBB' : '#E9E9E9')};
-  font-size: 4rem;
-  margin-right: 3rem;
-`
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-
-const ProjectSection = styled.section`
-  margin: 9.5rem 0;
-  padding: 5.5rem 10rem;
-
-  /* Select only last element */
-  > * + * {
-    margin-top: 7.2rem;
-  }
-`
-
-const ToolSection = styled.section`
-  margin-bottom: 10rem;
-  background: #fff8e0;
-  padding: 25rem 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .heading {
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-    color: #101223;
-    margin-bottom: 5.8rem;
-  }
-
-  .tools {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    > * + * {
-      margin-left: 4rem;
-    }
-  }
-`
-
-const ProfileSection = styled.section`
-  padding: 5.5rem 10rem;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 18rem;
-
-  .left {
-    flex-basis: 50%;
-    margin-right: 8rem;
-  }
-
-  .right {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 4.8rem;
-
-    .heading {
-      font-family: 'Gilroy';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 48px;
-      line-height: 60px;
-      color: #101223;
-      margin-bottom: 2.4rem;
-    }
-
-    .subheading {
-      font-family: 'Gilroy';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 32px;
-      color: #101223;
-    }
-  }
-`
 
 export default Home

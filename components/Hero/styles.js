@@ -16,6 +16,7 @@ export const HeroContainer = styled.header`
     white-space: nowrap;
     display: flex;
     flex-direction: column;
+    margin-top: -15rem;
   }
 
   .subtitle {

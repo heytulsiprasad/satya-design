@@ -68,6 +68,8 @@ const Home = () => {
         <FunkyText>Featured Projects</FunkyText>
         <FunkyText dark>Featured Projects</FunkyText>
         <FunkyText>Featured Projects</FunkyText>
+        <FunkyText dark>Featured Projects</FunkyText>
+        <FunkyText>Featured Projects</FunkyText>
       </Marquee>
       <ProjectSection>
         {projects &&

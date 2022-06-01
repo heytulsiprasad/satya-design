@@ -19,6 +19,7 @@ import miro from '../assets/miro.svg'
 import photoshop from '../assets/photoshop.svg'
 import slack from '../assets/slack.svg'
 import teams from '../assets/teams.svg'
+import profile from '../assets/man-looking-to-sky.png'
 
 const projects = [
   {
@@ -110,6 +111,18 @@ const Home = () => {
           </li>
         </ul>
       </ToolSection>
+      <ProfileSection>
+        <div className="left">
+          <Image src={profile} alt="User profile image" />
+        </div>
+        <div className="right">
+          <h1 className="heading">Design Driven by Passion</h1>
+          <h4 className="subheading">
+            I am a Passionate Designer exploring the true meaning of design and
+            how design is shaping people’s live.
+          </h4>
+        </div>
+      </ProfileSection>
     </Container>
   )
 }
@@ -162,6 +175,45 @@ const ToolSection = styled.section`
 
     > * + * {
       margin-left: 4rem;
+    }
+  }
+`
+
+const ProfileSection = styled.section`
+  padding: 5.5rem 10rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 18rem;
+
+  .left {
+    flex-basis: 50%;
+    margin-right: 8rem;
+  }
+
+  .right {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 4.8rem;
+
+    .heading {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 60px;
+      color: #101223;
+      margin-bottom: 2.4rem;
+    }
+
+    .subheading {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      color: #101223;
     }
   }
 `

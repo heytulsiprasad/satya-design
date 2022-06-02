@@ -7,7 +7,7 @@ import cross from '../../assets/cross.svg'
 // eslint-disable-next-line react/display-name
 const Sidebar = forwardRef(({ open, setOpen }, ref) => {
   return (
-    <SidebarContainer close={!open} ref={ref}>
+    <SidebarContainer open={open} ref={ref}>
       <Close>
         <button onClick={() => setOpen((c) => !c)}>
           <Image src={cross} alt="Close button" width={24} height={24} />

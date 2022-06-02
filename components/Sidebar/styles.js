@@ -2,18 +2,21 @@ import styled from 'styled-components'
 
 export const SidebarContainer = styled.div`
   height: 100vh;
-  width: 55vw;
+  width: 45vw;
   background: #0019ff;
   color: #fff;
   position: fixed;
   z-index: 100;
   top: 0;
-  left: ${(props) => (props.close ? '100vw' : '55vw')};
+  left: ${(props) => (!props.open ? '100vw' : '55vw')};
   display: flex;
   flex-direction: column;
   padding: 4.6rem 9.6rem;
   overflow: hidden;
-  transition: left 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+  transition: left 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895),
+    box-shadow 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+  box-shadow: ${(props) =>
+    props.open ? '0 0 0 10000px rgba(0, 0, 0, 0.5)' : '0'};
 `
 
 export const Close = styled.div`

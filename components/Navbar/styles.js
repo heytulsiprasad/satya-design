@@ -6,6 +6,10 @@ export const NavbarContainer = styled.nav`
   justify-content: space-between;
   padding: 5.5rem 10rem 0;
   flex-basis: 20%;
+
+  @media only screen and (max-width: 900px) {
+    padding: 5.5rem 3.2rem 0;
+  }
 `
 
 export const NavHero = styled.div`

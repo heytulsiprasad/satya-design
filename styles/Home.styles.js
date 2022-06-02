@@ -19,6 +19,10 @@ export const ProjectSection = styled.section`
   > * + * {
     margin-top: 7.2rem;
   }
+
+  @media only screen and (max-width: 900px) {
+    padding: 5.5rem 4.8rem;
+  }
 `
 
 export const ToolSection = styled.section`
@@ -58,9 +62,18 @@ export const ProfileSection = styled.section`
   flex-direction: row;
   margin-bottom: 12.6rem;
 
+  @media only screen and (max-width: 900px) {
+    padding: 5.5rem 4.8rem;
+    margin-bottom: 0;
+  }
+
   .left {
     flex-basis: 50%;
     margin-right: 8rem;
+
+    @media only screen and (max-width: 900px) {
+      margin-right: 4rem;
+    }
   }
 
   .right {
@@ -78,6 +91,12 @@ export const ProfileSection = styled.section`
       line-height: 60px;
       color: #101223;
       margin-bottom: 2.4rem;
+
+      @media only screen and (max-width: 900px) {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+      }
     }
 
     .subheading {
@@ -87,6 +106,12 @@ export const ProfileSection = styled.section`
       font-size: 24px;
       line-height: 32px;
       color: #101223;
+
+      @media only screen and (max-width: 900px) {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
   }
 `
@@ -96,9 +121,17 @@ export const FooterSection = styled.footer`
   background: #191f51;
   color: #fff;
 
+  @media only screen and (max-width: 900px) {
+    padding: 6rem 4.8rem;
+  }
+
   /* Top */
   .about {
     width: 60%;
+
+    @media only screen and (max-width: 900px) {
+      width: 80%;
+    }
 
     &__subhead {
       margin-bottom: 5.6rem;
@@ -111,6 +144,12 @@ export const FooterSection = styled.footer`
       font-size: 48px;
       line-height: 60px;
       margin-bottom: 4rem;
+
+      @media only screen and (max-width: 900px) {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 50px;
+      }
     }
 
     h4 {
@@ -118,6 +157,12 @@ export const FooterSection = styled.footer`
       font-size: 20px;
       line-height: 32px;
       color: #c5c5c5;
+
+      @media only screen and (max-width: 900px) {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
   }
 

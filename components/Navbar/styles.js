@@ -44,15 +44,22 @@ export const NavList = styled.div`
       margin-left: 8rem;
     }
 
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      p {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #101223;
+      }
+    }
+
     li span {
       display: block !important;
     }
-  }
-
-  p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #101223;
   }
 `

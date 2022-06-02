@@ -4,8 +4,6 @@ import Image from 'next/image'
 import { ProjectContainer, Font } from './styles'
 
 const Project = ({ subtitle, title, categories, photo, background, color }) => {
-  console.log({ subtitle, title, categories, photo, background, color })
-
   return (
     <ProjectContainer background={background}>
       <div className="left">

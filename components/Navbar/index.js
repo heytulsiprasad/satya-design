@@ -11,7 +11,7 @@ import useOnClickOutside from '../../hooks/useOnClickOutside'
 const Navbar = () => {
   const ref = useRef()
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   useOnClickOutside(ref, () => setOpen(false))
 
   return (

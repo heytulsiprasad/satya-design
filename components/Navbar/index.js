@@ -10,7 +10,7 @@ import hamburger from '../../assets/hamburger.svg'
 import { NavbarContainer, NavList, NavHero, HamburgerMenu } from './styles'
 import Sidebar from '../Sidebar'
 import useOnClickOutside from '../../hooks/useOnClickOutside'
-import { persona } from '../../data/data'
+import { persona, links } from '../../data/data'
 
 const MediaQuery = dynamic(
   () => import('../../node_modules/react-responsive'),
@@ -64,7 +64,9 @@ const Navbar = () => {
             <MediaQuery minWidth={700}>
               <li className="resume">
                 <button>
-                  <p>Get Resume</p>
+                  <a target="_blank" href={links.resume} rel="noreferrer">
+                    Get Resume
+                  </a>
                 </button>
               </li>
             </MediaQuery>

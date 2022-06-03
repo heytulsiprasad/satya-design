@@ -75,7 +75,8 @@ export const NavList = styled.div`
       background: none;
       cursor: pointer;
 
-      p {
+      a {
+        text-decoration: none;
         font-family: 'Gilroy';
         font-style: normal;
         font-weight: 500;

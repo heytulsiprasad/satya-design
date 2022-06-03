@@ -34,7 +34,7 @@ import mail from '../assets/mail.svg'
 import profile from '../assets/man-looking-to-sky.png'
 
 // Data
-import { projects, persona, profileData, footerData } from '../data/data'
+import { projects, persona, profileData, footerData, links } from '../data/data'
 
 const Home = () => {
   return (
@@ -109,7 +109,7 @@ const Home = () => {
           </li>
         </ul>
       </ToolSection>
-      <ProfileSection>
+      <ProfileSection id="about">
         <div className="left">
           <Image src={profile} alt="User profile image" />
         </div>
@@ -132,13 +132,19 @@ const Home = () => {
           <div className="footer__media">
             <ul className="footer__socials">
               <li>
-                <Image src={behance} alt="Behance Logo" />
+                <a href={links.behance} target="_blank" rel="noreferrer">
+                  <Image src={behance} alt="Behance Logo" />
+                </a>
               </li>
               <li>
-                <Image src={linkedin} alt="LinkedIn Logo" />
+                <a href={links.linkedin} target="_blank" rel="noreferrer">
+                  <Image src={linkedin} alt="LinkedIn Logo" />
+                </a>
               </li>
               <li>
-                <Image src={mail} alt="Mail Icon" />
+                <a href={links.mail} target="_blank" rel="noreferrer">
+                  <Image src={mail} alt="Mail Icon" />
+                </a>
               </li>
             </ul>
             <div className="footer__time">

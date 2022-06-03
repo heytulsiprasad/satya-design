@@ -55,6 +55,11 @@ export const Content = styled.div`
     list-style-type: none;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .start {
     h2 {
       font-weight: 500;

@@ -1,8 +1,10 @@
 import React, { forwardRef } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { SidebarContainer, Close, Content } from './styles'
 import cross from '../../assets/cross.svg'
+import { links } from '../../data/data'
 
 // eslint-disable-next-line react/display-name
 const Sidebar = forwardRef(({ open, setOpen }, ref) => {
@@ -17,19 +19,40 @@ const Sidebar = forwardRef(({ open, setOpen }, ref) => {
         <div className="start">
           <ul>
             <li>
-              <h2>Behance</h2>
+              <Link href="/">
+                <h2>Home</h2>
+              </Link>
             </li>
             <li>
-              <h2>LinkedIn</h2>
+              <h2>
+                <a href={links.behance} target="_blank" rel="noreferrer">
+                  Behance
+                </a>
+              </h2>
             </li>
             <li>
-              <h2>Mail</h2>
+              <h2>
+                <a href={links.linkedin} target="_blank" rel="noreferrer">
+                  LinkedIn
+                </a>
+              </h2>
             </li>
             <li>
-              <h2>About Me</h2>
+              <h2>
+                <a href={links.mail}>Mail</a>
+              </h2>
             </li>
             <li>
-              <h2>My Resume</h2>
+              <Link href="/#about">
+                <h2>About Me</h2>
+              </Link>
+            </li>
+            <li>
+              <h2>
+                <a href={links.resume} target="_blank" rel="noreferrer">
+                  Get Resume
+                </a>
+              </h2>
             </li>
           </ul>
         </div>

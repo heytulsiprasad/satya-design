@@ -235,6 +235,7 @@ export const FooterSection = styled.footer`
     &__media {
       display: flex;
       justify-content: space-between;
+      flex-basis: 60%;
 
       @media only screen and (max-width: 700px) {
         width: 100%;

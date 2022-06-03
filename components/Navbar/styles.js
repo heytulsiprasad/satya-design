@@ -8,6 +8,7 @@ export const NavbarContainer = styled.nav`
   flex-basis: 20%;
 
   @media only screen and (max-width: 900px) {
+    width: 95%;
     padding: 5.5rem 3.2rem 0;
   }
 `
@@ -86,5 +87,21 @@ export const NavList = styled.div`
     li span {
       display: block !important;
     }
+
+    .resume {
+      padding-right: 3rem;
+    }
+  }
+`
+
+export const HamburgerMenu = styled.div`
+  position: fixed;
+  top: 4.25rem;
+  right: 4.25rem;
+
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 `

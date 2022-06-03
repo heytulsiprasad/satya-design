@@ -7,6 +7,7 @@ export const HeroContainer = styled.header`
   align-items: center;
   flex-basis: 80%;
   min-height: 90vh;
+  padding: 0 20rem;
 
   .title {
     font-weight: 700;
@@ -33,6 +34,11 @@ export const HeroContainer = styled.header`
     color: #101223;
     line-height: 2.2rem;
     white-space: nowrap;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     @media only screen and (max-width: 700px) {
       font-size: 1.6rem;

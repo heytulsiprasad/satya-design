@@ -20,8 +20,6 @@ import {
 } from '../styles/Home.styles'
 
 // Images
-import iPadCover from '../assets/ipad-mockup.png'
-import iPhoneCover from '../assets/iphone-mockup.png'
 import figma from '../assets/figma.svg'
 import adobeXd from '../assets/adobe-xd.svg'
 import illustrator from '../assets/illustrator.svg'
@@ -35,26 +33,8 @@ import linkedin from '../assets/linkedin.svg'
 import mail from '../assets/mail.svg'
 import profile from '../assets/man-looking-to-sky.png'
 
-const projects = [
-  {
-    id: 0,
-    title: 'Organic farming made easy',
-    subtitle: 'Fasalsetu',
-    categories: 'UX, UI',
-    photo: iPhoneCover,
-    background: '#EDFFEB',
-    color: '#3EA536',
-  },
-  {
-    id: 1,
-    title: 'Virtual Wardrobe',
-    subtitle: 'Wearhouse',
-    categories: 'UX, UI',
-    photo: iPadCover,
-    background: '#E0FAFB',
-    color: '#171F28',
-  },
-]
+// Data
+import { projects, persona, profileData, footerData } from '../data/data'
 
 const Home = () => {
   return (
@@ -134,26 +114,20 @@ const Home = () => {
           <Image src={profile} alt="User profile image" />
         </div>
         <div className="right">
-          <h1 className="heading">Design Driven by Passion</h1>
-          <h4 className="subheading">
-            I am a Passionate Designer exploring the true meaning of design and
-            how design is shaping people’s live.
-          </h4>
+          <h1 className="heading">{profileData.heading}</h1>
+          <h4 className="subheading">{profileData.subheading}</h4>
         </div>
       </ProfileSection>
       <FooterSection>
         <div className="about">
-          <h1>Interfaces, Experience &#38; Interaction and friends</h1>
-          <h4 className="about__subhead">
-            I started my journey in computer Science engineering learning Web
-            development, but found solace in design.
-          </h4>
-          <h4>Let’s chat over a cup of coffee at Bhubaneswar, India</h4>
+          <h1>{footerData.title}</h1>
+          <h4 className="about__subhead">{footerData.subhead}</h4>
+          <h4>{footerData.subhead2}</h4>
         </div>
         <div className="footer">
           <div className="footer__designation">
-            <h4>Satyaprakash Ray</h4>
-            <h6>Product Designer</h6>
+            <h4>{persona.name}</h4>
+            <h6>{persona.role}</h6>
           </div>
           <div className="footer__media">
             <ul className="footer__socials">

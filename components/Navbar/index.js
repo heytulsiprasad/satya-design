@@ -10,6 +10,7 @@ import hamburger from '../../assets/hamburger.svg'
 import { NavbarContainer, NavList, NavHero, HamburgerMenu } from './styles'
 import Sidebar from '../Sidebar'
 import useOnClickOutside from '../../hooks/useOnClickOutside'
+import { persona } from '../../data/data'
 
 const MediaQuery = dynamic(
   () => import('../../node_modules/react-responsive'),
@@ -54,8 +55,8 @@ const Navbar = () => {
             style={{ marginBottom: 4 }}
           />
           <div className="designation">
-            <h4>Satyaprakash Ray</h4>
-            <h5>Product Designer</h5>
+            <h4>{persona.name}</h4>
+            <h5>{persona.role}</h5>
           </div>
         </NavHero>
         <NavList>

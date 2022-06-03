@@ -17,6 +17,13 @@ export const NavHero = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
+  @media only screen and (max-width: 700px) {
+    img {
+      margin-top: -10px !important;
+      height: 30px !important;
+    }
+  }
+
   .designation {
     display: flex;
     flex-direction: column;

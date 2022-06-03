@@ -22,10 +22,6 @@ const Navbar = () => {
   const [open, setOpen] = useState(false)
   useOnClickOutside(ref, () => setOpen(false))
 
-  // const isBigScreen = useMediaQuery({ query: '(max-width: 70rem)' })
-
-  // console.log({ isBigScreen })
-
   return (
     <>
       <NavbarContainer>
@@ -44,16 +40,6 @@ const Navbar = () => {
         </NavHero>
         <NavList>
           <ul>
-            <li>
-              <button>
-                <Image
-                  src={theme}
-                  alt="Theme change button"
-                  width={16}
-                  height={16}
-                />
-              </button>
-            </li>
             <MediaQuery minWidth={700}>
               <li>
                 <button>

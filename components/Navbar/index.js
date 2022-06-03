@@ -18,7 +18,13 @@ const Navbar = () => {
     <>
       <NavbarContainer>
         <NavHero>
-          <Image src={logo} alt="Logo of project" width={28} height={40} />
+          <Image
+            src={logo}
+            alt="Logo of project"
+            width={28}
+            height={40}
+            style={{ marginBottom: 4 }}
+          />
           <div className="designation">
             <h4>Satyaprakash Ray</h4>
             <h5>Product Designer</h5>

@@ -17,6 +17,11 @@ export const SidebarContainer = styled.div`
     box-shadow 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
   box-shadow: ${(props) =>
     props.open ? '0 0 0 10000px rgba(0, 0, 0, 0.5)' : '0'};
+
+  @media only screen and (max-width: 900px) {
+    width: 60vw;
+    left: ${(props) => (!props.open ? '100vw' : '40vw')};
+  }
 `
 
 export const Close = styled.div`

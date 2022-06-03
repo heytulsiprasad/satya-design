@@ -20,19 +20,22 @@ export const NavHero = styled.div`
   .designation {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-left: 2rem;
 
     h4 {
       font-weight: 600;
       font-size: 16px;
       color: #000000;
+      margin-bottom: 0.2rem;
+      line-height: 20px;
     }
 
     h5 {
       font-weight: 500;
       font-size: 12px;
       color: #bcbcbc;
+      line-height: 15px;
     }
   }
 `

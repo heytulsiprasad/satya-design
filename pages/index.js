@@ -108,7 +108,7 @@ const Home = () => {
             />
           </li>
           <li>
-            <Image src={figma} width={33} height={50} alt="Figma Logo" />
+            <Image src={figma} width={51} height={50} alt="Figma Logo" />
           </li>
           <li>
             <Image
@@ -155,19 +155,21 @@ const Home = () => {
             <h4>Satyaprakash Ray</h4>
             <h6>Product Designer</h6>
           </div>
-          <ul className="footer__socials">
-            <li>
-              <Image src={behance} alt="Behance Logo" />
-            </li>
-            <li>
-              <Image src={linkedin} alt="LinkedIn Logo" />
-            </li>
-            <li>
-              <Image src={mail} alt="Mail Icon" />
-            </li>
-          </ul>
-          <div className="footer__time">
-            <p>{new Date().getFullYear()}</p>
+          <div className="footer__media">
+            <ul className="footer__socials">
+              <li>
+                <Image src={behance} alt="Behance Logo" />
+              </li>
+              <li>
+                <Image src={linkedin} alt="LinkedIn Logo" />
+              </li>
+              <li>
+                <Image src={mail} alt="Mail Icon" />
+              </li>
+            </ul>
+            <div className="footer__time">
+              <p>{new Date().getFullYear()}</p>
+            </div>
           </div>
         </div>
       </FooterSection>

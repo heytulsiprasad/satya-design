@@ -37,6 +37,10 @@ export const ToolSection = styled.section`
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: 700px) {
+    padding: 14.6rem 4.5rem;
+  }
+
   .heading {
     font-family: 'Gilroy';
     font-style: normal;
@@ -57,6 +61,16 @@ export const ToolSection = styled.section`
     > * + * {
       margin-left: 4rem;
     }
+
+    @media only screen and (max-width: 700px) {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      /* Each icon */
+      li {
+        margin: 4rem;
+      }
+    }
   }
 `
 
@@ -71,12 +85,23 @@ export const ProfileSection = styled.section`
     margin-bottom: 6rem;
   }
 
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    padding: 5.5rem 2.5rem;
+    margin: 0;
+  }
+
   .left {
     flex-basis: 50%;
     margin-right: 8rem;
 
     @media only screen and (max-width: 900px) {
       margin-right: 4rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+      align-self: center;
+      margin: 0 0 4.8rem 0;
     }
   }
 
@@ -101,6 +126,12 @@ export const ProfileSection = styled.section`
         font-size: 48px;
         line-height: 60px;
       }
+
+      @media only screen and (max-width: 700px) {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-bottom: 4rem;
+      }
     }
 
     .subheading {
@@ -115,6 +146,11 @@ export const ProfileSection = styled.section`
         font-weight: 400;
         font-size: 20px;
         line-height: 32px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        font-size: 16px;
+        line-height: 22px;
       }
     }
   }
@@ -137,6 +173,10 @@ export const FooterSection = styled.footer`
       width: 80%;
     }
 
+    @media only screen and (max-width: 700px) {
+      width: 100%;
+    }
+
     &__subhead {
       margin-bottom: 5.6rem;
     }
@@ -150,9 +190,13 @@ export const FooterSection = styled.footer`
       margin-bottom: 4rem;
 
       @media only screen and (max-width: 900px) {
-        font-weight: 800;
         font-size: 40px;
         line-height: 50px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        font-size: 32px;
+        line-height: 40px;
       }
     }
 
@@ -163,34 +207,66 @@ export const FooterSection = styled.footer`
       color: #c5c5c5;
 
       @media only screen and (max-width: 900px) {
-        font-weight: 400;
         font-size: 20px;
         line-height: 32px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        font-size: 16px;
+        line-height: 22px;
       }
     }
   }
 
   /* Bottom */
   .footer {
-    margin-top: 17.8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 17.8rem;
+
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      margin-top: 8.4rem;
+      align-items: flex-start;
+    }
+
+    &__media {
+      display: flex;
+      justify-content: space-between;
+
+      @media only screen and (max-width: 700px) {
+        width: 100%;
+        margin-top: 3.3rem;
+      }
+    }
 
     &__designation {
+      /* Name */
       h4 {
         font-weight: 600;
         font-size: 24px;
         line-height: 29px;
         margin-bottom: 0.8rem;
+
+        @media only screen and (max-width: 500px) {
+          font-size: 14px;
+          line-height: 17px;
+        }
       }
 
+      /* Designation */
       h6 {
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
         color: #868686;
+
+        @media only screen and (max-width: 500px) {
+          font-size: 8px;
+          line-height: 10px;
+        }
       }
     }
 
@@ -199,9 +275,14 @@ export const FooterSection = styled.footer`
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin-right: 2rem;
 
       > * + * {
-        margin-left: 9.3rem;
+        margin-left: 9rem;
+
+        @media only screen and (max-width: 900px) {
+          margin-left: 5rem;
+        }
       }
     }
 

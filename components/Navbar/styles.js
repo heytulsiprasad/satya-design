@@ -29,6 +29,11 @@ export const NavHero = styled.div`
       color: #000000;
       margin-bottom: 0.2rem;
       line-height: 20px;
+
+      @media only screen and (max-width: 700px) {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+      }
     }
 
     h5 {
@@ -36,6 +41,12 @@ export const NavHero = styled.div`
       font-size: 12px;
       color: #bcbcbc;
       line-height: 15px;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.05em;
+      }
     }
   }
 `

@@ -22,6 +22,11 @@ export const SidebarContainer = styled.div`
     width: 60vw;
     left: ${(props) => (!props.open ? '100vw' : '40vw')};
   }
+
+  @media only screen and (max-width: 700px) {
+    width: 100vw;
+    left: ${(props) => (!props.open ? '100vw' : '0vw')};
+  }
 `
 
 export const Close = styled.div`

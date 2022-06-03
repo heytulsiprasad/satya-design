@@ -23,6 +23,10 @@ export const ProjectSection = styled.section`
   @media only screen and (max-width: 900px) {
     padding: 5.5rem 4.8rem;
   }
+
+  @media only screen and (max-width: 700px) {
+    padding: 5.5rem 2.5rem;
+  }
 `
 
 export const ToolSection = styled.section`
@@ -64,7 +68,7 @@ export const ProfileSection = styled.section`
 
   @media only screen and (max-width: 900px) {
     padding: 5.5rem 4.8rem;
-    margin-bottom: 0;
+    margin-bottom: 6rem;
   }
 
   .left {

@@ -3,9 +3,17 @@ import Image from 'next/image'
 
 import { ProjectContainer, Font } from './styles'
 
-const Project = ({ subtitle, title, categories, photo, background, color }) => {
+const Project = ({
+  subtitle,
+  title,
+  categories,
+  photo,
+  background,
+  color,
+  onTap,
+}) => {
   return (
-    <ProjectContainer background={background}>
+    <ProjectContainer background={background} onClick={onTap}>
       <div className="left">
         <Font.SubHead color={color}>{subtitle}</Font.SubHead>
         <Font.Head>{title}</Font.Head>

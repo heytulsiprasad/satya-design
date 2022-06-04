@@ -9,6 +9,7 @@ export const ProjectContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
 
   @media only screen and (max-width: 700px) {
     flex-direction: column-reverse;

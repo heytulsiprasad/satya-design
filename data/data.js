@@ -20,6 +20,7 @@ export const projects = [
   {
     id: 0,
     title: 'Organic farming made easy',
+    slug: 'organic-farming-made-easy',
     subtitle: 'Fasalsetu',
     categories: 'UX, UI',
     photo: iPhoneCover,
@@ -29,6 +30,7 @@ export const projects = [
   {
     id: 1,
     title: 'Virtual Wardrobe',
+    slug: 'virtual-wardrobe',
     subtitle: 'Wearhouse',
     categories: 'UX, UI',
     photo: iPadCover,

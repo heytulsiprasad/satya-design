@@ -59,7 +59,7 @@ const Home = () => {
           projects.map((project, idx) => (
             <Project
               key={idx}
-              onTap={() => router.push('/project')}
+              onTap={() => router.push(`/project/${project.slug}`)}
               subtitle={project.subtitle}
               title={project.title}
               photo={project.photo}

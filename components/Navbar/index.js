@@ -1,8 +1,8 @@
 import React, { useState, useRef, forwardRef, useEffect } from 'react'
 import Image from 'next/image'
 import { useMediaQuery } from 'react-responsive'
-
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 
 import logo from '../../assets/logo.svg'
 import theme from '../../assets/theme.svg'
@@ -47,13 +47,15 @@ const Navbar = () => {
     <>
       <NavbarContainer>
         <NavHero>
-          <Image
-            src={logo}
-            alt="Logo of project"
-            width={28}
-            height={40}
-            style={{ marginBottom: 4 }}
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Logo of project"
+              width={28}
+              height={40}
+              style={{ marginBottom: 4 }}
+            />
+          </Link>
           <div className="designation">
             <h4>{persona.name}</h4>
             <h5>{persona.role}</h5>

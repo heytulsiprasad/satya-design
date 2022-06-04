@@ -7,6 +7,7 @@ import fasalsetu from '../assets/fasalsetu.png'
 import fasalsetu_phone from '../assets/fasalsetu_phone.png'
 
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Project = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 700px)' })
@@ -16,10 +17,8 @@ const Project = () => {
   return (
     <Container>
       <Navbar />
-      <Image
-        src={isTabletOrMobile ? fasalsetu_phone : fasalsetu}
-        alt="Project Presentation"
-      />
+      <h4>Content Hijacked</h4>
+      <Footer />
     </Container>
   )
 }

@@ -3,9 +3,6 @@ import Image from 'next/image'
 import { useMediaQuery } from 'react-responsive'
 import styled from 'styled-components'
 
-import fasalsetu from '../assets/fasalsetu.png'
-import fasalsetu_phone from '../assets/fasalsetu_phone.png'
-
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 

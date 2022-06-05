@@ -44,7 +44,7 @@ const Project = () => {
     <Container>
       <Navbar />
       <div style={{ marginTop: 32 }}>
-        {image && <Image src={image} alt="Project Presentation" />}
+        {image && <Image src={image} alt="Project Presentation" quality={90} />}
       </div>
       <Footer />
     </Container>

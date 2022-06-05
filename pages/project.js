@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 const Project = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 700px)' })
 
-  console.log({ isTabletOrMobile })
+  // console.log({ isTabletOrMobile })
 
   return (
     <Container>

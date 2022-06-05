@@ -72,17 +72,6 @@ const Sidebar = forwardRef(({ open, setOpen }, ref) => {
             </li>
           </ul>
         </div>
-        <div className="end">
-          <h4>Coming Soon</h4>
-          <ul>
-            <li>
-              <h2>My Services</h2>
-            </li>
-            <li>
-              <h2>All Projects</h2>
-            </li>
-          </ul>
-        </div>
       </Content>
     </SidebarContainer>
   )

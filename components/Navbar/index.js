@@ -53,7 +53,7 @@ const Navbar = () => {
               alt="Logo of project"
               width={28}
               height={40}
-              style={{ marginBottom: 4 }}
+              style={{ marginBottom: 4, cursor: 'pointer' }}
             />
           </Link>
           <div className="designation">

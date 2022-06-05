@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
           </ul>
           <div className="footer__time">
-            <p>{new Date().getFullYear()}</p>
+            <p>&copy; {new Date().getFullYear()}</p>
           </div>
         </div>
       </div>

@@ -7,6 +7,13 @@ export const persona = {
   role: 'Product Designer',
 }
 
+export const seo = {
+  title: 'Satyaprakash Ray',
+  description:
+    "Product and design is what i'm passionate about. I'm a self taught designer who started my journey as a graphic designer and freelance and then moved to product design.",
+  url: 'https://satyaprakashray.com',
+}
+
 export const links = {
   behance: 'https://www.behance.net/satyaprakashray',
   linkedin: 'https://www.linkedin.com/in/satyaprakash-ray-9308aa1a1/',

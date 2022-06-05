@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import { useMediaQuery } from 'react-responsive'
@@ -44,7 +45,15 @@ const Project = () => {
     <Container>
       <Navbar />
       <div style={{ marginTop: 32 }}>
-        {image && <Image src={image} alt="Project Presentation" quality={90} />}
+        {image && (
+          <div style={{ width: '100vw' }}>
+            <img
+              alt="Project Presentation"
+              src={image.src}
+              style={{ display: 'block', width: '100%', height: '100%' }}
+            />
+          </div>
+        )}
       </div>
       <Footer />
     </Container>

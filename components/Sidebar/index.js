@@ -1,6 +1,7 @@
-import React, { forwardRef } from 'react'
+import React, { forwardRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import { SidebarContainer, Close, Content } from './styles'
 import cross from '../../assets/cross.svg'
@@ -8,6 +9,19 @@ import { links } from '../../data/data'
 
 // eslint-disable-next-line react/display-name
 const Sidebar = forwardRef(({ open, setOpen }, ref) => {
+  const router = useRouter()
+  const pathname = router.pathname
+
+  const [showHome, setShowHome] = useState(false)
+
+  useEffect(() => {
+    if (pathname === '/project/[slug]') {
+      setShowHome(true)
+    } else {
+      setShowHome(false)
+    }
+  }, [pathname])
+
   return (
     <SidebarContainer open={open} ref={ref}>
       <Close>
@@ -18,11 +32,13 @@ const Sidebar = forwardRef(({ open, setOpen }, ref) => {
       <Content>
         <div className="start">
           <ul>
-            <li>
-              <Link href="/">
-                <h2>Home</h2>
-              </Link>
-            </li>
+            {showHome && (
+              <li>
+                <Link href="/">
+                  <h2>Home</h2>
+                </Link>
+              </li>
+            )}
             <li>
               <h2>
                 <a href={links.behance} target="_blank" rel="noreferrer">

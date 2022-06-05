@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import { seo } from '../data/data'
+import logo from '../assets/logo.svg'
 
 const SEO = ({
   title = seo.title,
@@ -12,7 +13,7 @@ const SEO = ({
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="icon" href="" />
+      <link rel="icon" href={logo.src} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />

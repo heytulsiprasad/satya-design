@@ -33,7 +33,7 @@ import miro from '../assets/miro.svg'
 import photoshop from '../assets/photoshop.svg'
 import slack from '../assets/slack.svg'
 import teams from '../assets/teams.svg'
-import profile from '../assets/man-looking-to-sky.png'
+import profile from '../assets/cover.png'
 import logo from '../assets/logo.svg'
 
 // Data

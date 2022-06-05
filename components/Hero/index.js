@@ -8,12 +8,12 @@ const Hero = () => {
   return (
     <HeroContainer>
       <div className="title">
-        <span>{heroTitle[1]}</span>
-        <span>{heroTitle[2]}</span>
+        <p>{heroTitle[1]}</p>
+        <p>{heroTitle[2]}</p>
       </div>
       <div className="subtitle">
-        <span>{heroSubtitle[1]}</span>
-        <span>{heroSubtitle[2]}</span>
+        <p>{heroSubtitle[1]}</p>
+        <p>{heroSubtitle[2]}</p>
       </div>
       <div className="button">
         <Button

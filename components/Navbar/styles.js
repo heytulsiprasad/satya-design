@@ -20,7 +20,6 @@ export const NavHero = styled.div`
 
   @media only screen and (max-width: 700px) {
     img {
-      margin-top: -10px !important;
       height: 30px !important;
     }
   }

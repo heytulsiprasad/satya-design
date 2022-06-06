@@ -72,9 +72,8 @@ export const footerData = {
 }
 
 export const about = [
-  'I started my journey as a web developer and learned a lot of skills like HTML, CSS, Javascript etc. , and i was enjoying code the front end. But when i started learning backend, i realised its not my cup of tea, and i started exploring design. I was fascinated how design is having impact on people lives. It became clear for me that design exist everywhere. This is how i got into design and started working as a designer.',
-  'I worked with organisations, some of them are budding startups and some are established companies. They gave me the oppurtunity to build great products with some talented peeps out there and also learn a lot about product design and people. Through this journey of mine i learnt how to plan a roadmap for product development which is necessary for smooth workflow.',
-  'I understand the business needs and user needs through user research and empathising with them which help me map the product and build better architecture for the product. After which wireframing and final designs are done. I work closely with design and dev team so that a great product is delivered in time.',
+  "I began my career as a web developer, learning a variety of skills such as HTML, CSS, and Javascript, and thoroughly enjoying developing the front end. However, once I started learning backend, I realized it wasn't my ideal, so I moved on to design. I was enthralled by the impact that design has on people's lives. It became clear to me that design can be found in any area. This is how I became interested in design and began working as a designer.",
+  'I worked for a range of organizations, some of which were just starting and others that were well-established. They allowed me to work on some incredible products with incredible people while also teaching me a lot about product design and users. During this journey, I learned how to plan a product development roadmap, which is necessary for a smooth workflow. After understanding the business and user needs through user research and empathizing with them, I map the product and build a better architecture for it. The wireframing and final designs are then completed. To ensure that a high-quality product is delivered on time, I work closely with the design and development teams.',
 ]
 
 export const dev = {

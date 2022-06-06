@@ -15,7 +15,7 @@ const Sidebar = forwardRef(({ open, setOpen }, ref) => {
   const [showHome, setShowHome] = useState(false)
 
   useEffect(() => {
-    if (pathname === '/project/[slug]') {
+    if (pathname !== '/') {
       setShowHome(true)
     } else {
       setShowHome(false)
@@ -58,13 +58,13 @@ const Sidebar = forwardRef(({ open, setOpen }, ref) => {
                 <a href={links.mail}>Mail</a>
               </h2>
             </li>
-            {/* <li>
-              <Link href="/#about">
+            <li>
+              <Link href="/about">
                 <h2>
                   <a>About Me</a>
                 </h2>
               </Link>
-            </li> */}
+            </li>
             <li>
               <h2>
                 <a href={links.resume} target="_blank" rel="noreferrer">

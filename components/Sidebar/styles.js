@@ -71,6 +71,7 @@ export const Content = styled.div`
       font-size: 32px;
       line-height: 40px;
       margin-bottom: 4rem;
+      cursor: pointer;
     }
   }
 

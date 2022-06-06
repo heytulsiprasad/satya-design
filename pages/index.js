@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import Marquee from 'react-fast-marquee'
 import Image from 'next/image'
@@ -122,7 +121,7 @@ const Home = () => {
             </li>
           </ul>
         </ToolSection>
-        <ProfileSection id="about">
+        <ProfileSection>
           <div className="left">
             <Image src={profile} alt="User profile image" />
           </div>

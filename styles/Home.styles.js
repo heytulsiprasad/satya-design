@@ -94,6 +94,9 @@ export const ProfileSection = styled.section`
   .left {
     flex-basis: 50%;
     margin-right: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media only screen and (max-width: 900px) {
       margin-right: 4rem;
@@ -110,7 +113,6 @@ export const ProfileSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 4.8rem;
 
     .heading {
       font-family: 'Gilroy';

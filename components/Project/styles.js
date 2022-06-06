@@ -28,6 +28,7 @@ export const ProjectContainer = styled.div`
 
     @media only screen and (max-width: 700px) {
       margin: 3.2rem 0;
+      padding: 1rem 8.6rem 0 3.2rem;
     }
   }
 

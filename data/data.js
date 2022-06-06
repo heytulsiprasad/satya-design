@@ -76,3 +76,8 @@ export const about = [
   'I worked with organisations, some of them are budding startups and some are established companies. They gave me the oppurtunity to build great products with some talented peeps out there and also learn a lot about product design and people. Through this journey of mine i learnt how to plan a roadmap for product development which is necessary for smooth workflow.',
   'I understand the business needs and user needs through user research and empathising with them which help me map the product and build better architecture for the product. After which wireframing and final designs are done. I work closely with design and dev team so that a great product is delivered in time.',
 ]
+
+export const dev = {
+  name: 'Tulsi Prasad',
+  link: 'https://www.linkedin.com/in/heytulsiprasad/',
+}

@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import { SidebarContainer, Close, Content } from './styles'
 import cross from '../../assets/cross.svg'
-import { links } from '../../data/data'
+import { links, dev } from '../../data/data'
 
 // eslint-disable-next-line react/display-name
 const Sidebar = forwardRef(({ open, setOpen }, ref) => {
@@ -30,7 +30,7 @@ const Sidebar = forwardRef(({ open, setOpen }, ref) => {
         </button>
       </Close>
       <Content>
-        <div className="start">
+        <div className="sections">
           <ul>
             {showHome && (
               <li>
@@ -73,6 +73,15 @@ const Sidebar = forwardRef(({ open, setOpen }, ref) => {
               </h2>
             </li>
           </ul>
+        </div>
+        <div className="credits">
+          <h2>Developed with ❤️</h2>
+          <h2>
+            by{' '}
+            <a target="_blank" rel="noreferrer" href={dev.link}>
+              {dev.name}
+            </a>
+          </h2>
         </div>
       </Content>
     </SidebarContainer>

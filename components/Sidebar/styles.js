@@ -65,7 +65,9 @@ export const Content = styled.div`
     color: inherit;
   }
 
-  .start {
+  .sections {
+    height: 100%;
+
     h2 {
       font-weight: 500;
       font-size: 32px;
@@ -75,21 +77,13 @@ export const Content = styled.div`
     }
   }
 
-  .end {
-    h4 {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 40px;
-      color: #9c9c9c;
-      margin-bottom: 1.2rem;
-    }
-
+  .credits {
     h2 {
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 40px;
-      color: #9c9c9c;
-      margin-bottom: 1.2rem;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #cacaca;
+      text-align: right;
     }
   }
 `

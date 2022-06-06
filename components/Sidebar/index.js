@@ -58,11 +58,13 @@ const Sidebar = forwardRef(({ open, setOpen }, ref) => {
                 <a href={links.mail}>Mail</a>
               </h2>
             </li>
-            <li>
+            {/* <li>
               <Link href="/#about">
-                <h2>About Me</h2>
+                <h2>
+                  <a>About Me</a>
+                </h2>
               </Link>
-            </li>
+            </li> */}
             <li>
               <h2>
                 <a href={links.resume} target="_blank" rel="noreferrer">

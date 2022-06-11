@@ -19,7 +19,7 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/satyaprakash-ray-9308aa1a1/',
   dribbble: 'https://dribbble.com/satyaprakash_ray',
   resume:
-    'https://www.dropbox.com/s/cqe19c9jyqb9dlm/Satyapraksh_Ray_Resume.pdf',
+    'https://www.dropbox.com/s/6m1sqkz47vo21it/Satyaprakash_Ray_Resume.pdf',
   mail: 'mailto:satyaprakashray999@gmail.com',
 }
 

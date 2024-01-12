@@ -1,6 +1,7 @@
 // Images
 import iPadCover from '../assets/ipad-mockup.png'
 import iPhoneCover from '../assets/iphone-mockup.png'
+import pizzaCover from '../assets/pizza-mockup.png'
 
 export const persona = {
   name: 'Satyaprakash Ray',
@@ -44,6 +45,16 @@ export const projects = [
     background: '#E0FAFB',
     color: '#171F28',
   },
+  {
+    id: 2,
+    title: 'Royalty System Made Intuitive',
+    slug: 'pizza-hut',
+    subtitle: 'Pizza Hut Indonesia',
+    categories: 'UX, UI',
+    photo: pizzaCover,
+    background: '#FFE1CF',
+    color: '#C8102E',
+  }
 ]
 
 export const heroTitle = {

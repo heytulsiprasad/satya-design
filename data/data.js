@@ -54,7 +54,7 @@ export const projects = [
     photo: pizzaCover,
     background: '#FFE1CF',
     color: '#C8102E',
-  }
+  },
 ]
 
 export const heroTitle = {
@@ -88,6 +88,6 @@ export const about = [
 ]
 
 export const dev = {
-  name: 'Tulsi Prasad',
-  link: 'https://www.linkedin.com/in/heytulsiprasad/',
+  name: 'Pixbox Labs',
+  link: 'https://pixboxlabs.com',
 }
